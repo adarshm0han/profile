@@ -3,26 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>Adarsh Mohan</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>My Profile</h1>
+    <header class="hero" id="home">
+        <div class="hero-content" data-aos="fade-down">
+            <h1>Adarsh Mohan</h1>
+            <p>M.S. Computer Science Student</p>
+            <p>Mobile: +1 (602) 339 5245 | Email: <a href="mailto:adarsh.2800@gmail.com">adarsh.2800@gmail.com</a></p>
+        </div>
     </header>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Briefly describe your background, skills, and interests here.</p>
+        <section id="education" data-aos="fade-up">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Arizona State University</strong> &mdash; M.S. Computer Science (2025 &ndash; Present), GPA: 3.89/4.0</li>
+                <li><strong>Manipal Institute of Technology</strong> &mdash; B.Tech Electrical & Electronics Engineering (2019 &ndash; 2023), CGPA: 7.46/10</li>
+                <li><strong>Delhi Public School, Patna</strong> &mdash; CBSE Class XII (2019), 85.2%</li>
+                <li><strong>Delhi Public School, Patna</strong> &mdash; CBSE Class X (2017), CGPA: 9.4/10</li>
+            </ul>
         </section>
-        <section id="experience">
+        <section id="experience" data-aos="fade-up">
             <h2>Experience</h2>
-            <p>Add details about your professional experience.</p>
+            <h3>Senior Associate-Data Engineer, Genpact, Kolkata (Dec 2023 &ndash; Jan 2025)</h3>
+            <ul>
+                <li>Oversaw data governance tasks and ETL validation using Talend, SQL and Tableau.</li>
+                <li>Ensured seamless data flow across DB layers and notified consumers via SOX reports.</li>
+            </ul>
+            <h3>AI/ML Engineering Intern, CasaMed, Bengaluru (Jan 2023 &ndash; Aug 2023)</h3>
+            <ul>
+                <li>Used Google ML Kit Pose detection to train and evaluate 128 computer vision models.</li>
+                <li>Developed a WhatsApp chatbot with spaCy NER to recommend physiotherapy exercises.</li>
+            </ul>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Include ways for recruiters to reach you, such as email or social media links.</p>
+        <section id="projects" data-aos="fade-up">
+            <h2>Academic Projects</h2>
+            <ul>
+                <li><strong>Epileptic Seizure Detector:</strong> Achieved 99.2% accuracy using a Random Forest classifier on EEG signals.</li>
+                <li><strong>Movie Recommender System:</strong> Deployed a content-based recommender using NLP and nearest neighbors on Heroku.</li>
+                <li><strong>Scalable Graph Analytics Pipeline:</strong> Processed NYC taxi data with Neo4j, Docker, Kafka, and Kubernetes to achieve sub-second latency.</li>
+            </ul>
+        </section>
+        <section id="certifications" data-aos="fade-up">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Machine Learning &mdash; Stanford University (Coursera)</li>
+                <li>Data Science Foundation using R &mdash; Johns Hopkins University</li>
+            </ul>
+        </section>
+        <section id="activities" data-aos="fade-up">
+            <h2>Extra-Curricular</h2>
+            <p>Placed 4th in Kaggle Dev-a-Thon by Growth Jockey for a lead-scoring algorithm predicting customer purchases.</p>
         </section>
     </main>
+    <footer data-aos="fade-up">
+        <p>&copy; 2024 Adarsh Mohan</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 </html>
